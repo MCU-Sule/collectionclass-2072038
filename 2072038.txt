@@ -1,0 +1,33 @@
+2072038_Kathleen Felicia Annabel
+
+- how to search for data with nrp
+Dengan menggunakan filter, pertama identifikasi dulu nrp mana yang ingin dicari, lalu lihat apakah data dalam list mengandung nrp tersebut (bisa dengan menggunakan method contains), jika hasil pengecekan true maka simpan indeks dari data di dalam list tersebut.
+
+- how to delete
+Menggunakan method remove(), di mana dalam tanda () masukkan data apa yang ingin kita hapus.
+
+- how to prevent error when no data deleted
+Dengan menggunakan if dan else. Pertama lakukan pengecekan apakah data yang dihapus ada dalam list, jika ada maka lakukan penghapusan, dan jika tidak ada masuk ke fungsi else dengan menampilkan pesan error.
+
+- how to show error when no data deleted
+Dengan menggunakan pengkondisian, jika tidak ada data yang dihapus bisa lakukan print ke dalam sistem dengan System.out.println() yang menampilkan pesan error.
+
+- how to add confirm box to make sure deletion
+Dengan menggunakan alert yang memunculkan showConfirmDialog, berisi pilihan ya atau tidak untuk delete data. Jika user memilih ya, maka akan masuk ke dalam pengkondisian dimana terdapat fungsi untuk menghapus data dan data akan terhapus. Namun jika user memilih tidak, maka data tidak akan terhapus.
+
+- how to know which data selected from table select
+Menggunakan getSelectionModel() dan getSelectedItem().
+
+- how to show selected data from table on the txtNrpDelete
+Dengan cara menuliskan code txtNrpDelete.setText(table.getSelectionModel().getSelectedItem().getData());
+
+- how to delete data selected from table select
+Dengan cara menuliskan code list.remove(table.getSelectionModel().getSelectedItem());
+
+- if student has multiple score, and you would like to
+  add delete update score on student what file need to be added
+File yang harus ditambah yaitu class untuk masing-masing mata pelajaran yang nilainya ingin ditambahkan dalam list Student.
+
+- if student has multiple score, and you would like to
+  add delete update score on student what file need to be updated
+File class masing-masing skor untuk student, harus ada constructor, getter, dan setternya. Tombol dan fungsi untuk update.
